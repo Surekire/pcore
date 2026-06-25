@@ -1,0 +1,15 @@
+$$a$$
+<div>
+    <p>@i</p>
+</div>
+
+$$b$$
+l(hier könnte irgendwas stehen, oder auch das hier einfach,noch irgendwas wenn dir langweilig ist)
+
+$$c$$
+for(<div>
+    <p>@i</p>
+</div>\n,l(i),$b$)
+
+$$out$$
+$c$

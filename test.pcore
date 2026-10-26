@@ -1,3 +1,10 @@
+$$axi$$
+axis_host_
+
+$$saves$$
+l(tvalid,tready,$tdata$,tkeep,tlast)
+
+
 $$a$$
 32
 
@@ -8,3 +15,18 @@ $$c$$
 for($a$\n,l(i),$b$)
 
 $$out$$
+ila_perf_host inst_ila_perf_host \(
+    .clk\(aclk\),
+    .probe0\(axis_host_recv[0].tvalid\),
+    .probe1\(axis_host_recv[0].tready\),
+    .probe2\(axis_host_recv[0].tdata[63:0]\),
+    .probe3\(axis_host_recv[0].tdata[127:64]\),
+    .probe4\(axis_host_recv[0].tdata[191:128]\),
+    .probe5\(axis_host_recv[0].tdata[255:192]\),
+    .probe6\(axis_host_recv[0].tdata[319:256]\),
+    .probe7\(axis_host_recv[0].tdata[383:320]\),
+    .probe8\(axis_host_recv[0].tdata[447:384]\),
+    .probe9\(axis_host_recv[0].tdata[511:448]\),
+    .probe10\(axis_host_recv[0].tkeep\),
+    .probe11\(axis_host_recv[0].tlast\)
+\);

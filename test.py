@@ -22,3 +22,14 @@ def pcore_range(ctx: Context, args):
 def pcore_eval(ctx: Context, args):
     arg = ctx.evaluate(args[0])
     return str(eval(arg))
+
+
+
+#args[0]: join str
+#args[1]: list of str to be joined, form [a,b,c]
+@pcore_function("j")
+def pcore_join(ctx: Context, args):
+    sep = ctx.evaluate(args[0])
+    items = read_str_list(ctx.evaluate(args[1]))
+    return sep.join(items)
+

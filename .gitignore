@@ -1,2 +1,4 @@
 *.txt
 __pycache__
+*.pcore
+Pcore_preview_output.txt

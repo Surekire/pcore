@@ -1,15 +1,10 @@
 $$a$$
-<div>
-    <p>@i</p>
-</div>
+32
 
 $$b$$
-l(hier könnte irgendwas stehen, oder auch das hier einfach,noch irgendwas wenn dir langweilig ist)
+range()
 
 $$c$$
-for(<div>
-    <p>@i</p>
-</div>\n,l(i),$b$)
+for($a$\n,l(i),$b$)
 
 $$out$$
-$c$

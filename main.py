@@ -2,6 +2,7 @@ from parser import Parser,dump
 from evaluate import Context
 from inputhandler import FileHandler, updateMode, outputMode
 import functions
+import test
 
 p = FileHandler()
 
